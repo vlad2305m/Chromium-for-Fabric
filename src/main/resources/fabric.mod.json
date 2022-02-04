@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "chromium_for_fabric",
+  "version": "${version}",
+
+  "name": "Chromium for Fabric",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "vlad2305m"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/vlad2305m/Chromium-for-Fabric"
+  },
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/chromiumforfabric/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.vlad2305m.chromiumforfabric.ChromiumForFabricMod"
+    ],
+    "modmenu": [
+      "com.vlad2305m.chromiumforfabric.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "chromiumforfabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

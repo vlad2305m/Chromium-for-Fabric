@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.vlad2305m.chromiumforfabric.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "cef.CefAppMixin",
+    "cef.CefAppMixin$BootStrapLoaderJammer",
+    "cef.CefAppMixin$DummyTest",
+    "cef.CefBrowserOsrMixin",
+    "cef.CefInitializerMixin",
+    "cef.CefRendererMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
